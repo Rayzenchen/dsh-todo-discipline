@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300" role="img" aria-label="A task list being kept current while a one-sentence check-in arrives">
+  <defs>
+    <linearGradient id="tdp-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#34E0B0"/>
+      <stop offset="1" stop-color="#0F9D7C"/>
+    </linearGradient>
+    <linearGradient id="tdp-progress" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#4BE0B6"/>
+      <stop offset="1" stop-color="#0F9D7C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="300" rx="20" fill="#F3F5F9"/>
+
+  <!-- The task list, partway through -->
+  <rect x="40" y="48" width="296" height="204" rx="18" fill="#FFFFFF" stroke="#D9E1EC" stroke-width="1.5"/>
+  <rect x="64" y="70" width="52" height="10" rx="5" fill="#0F9D7C" opacity="0.9"/>
+  <rect x="126" y="70" width="86" height="10" rx="5" fill="#E1E7EF"/>
+
+  <!-- Row 1: completed -->
+  <circle cx="78" cy="108" r="9.5" fill="#0F9D7C"/>
+  <path d="M73.6 108.4 L76.8 111.6 L82.6 104.9" fill="none" stroke="#FFFFFF" stroke-width="2.2"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="98" y="101" width="152" height="12" rx="6" fill="#D8E0EA"/>
+  <rect x="266" y="101" width="46" height="12" rx="6" fill="#EDF1F6"/>
+
+  <!-- Row 2: in progress, the row being worked on -->
+  <rect x="56" y="124" width="264" height="44" rx="12" fill="#EAFBF5" stroke="#A7E9D5" stroke-width="1.5"/>
+  <circle cx="78" cy="146" r="9.5" fill="none" stroke="#CDEFE3" stroke-width="3"/>
+  <path d="M78 136.5 A9.5 9.5 0 0 1 87.5 146" fill="none" stroke="url(#tdp-ring)" stroke-width="3"
+        stroke-linecap="round"/>
+  <rect x="98" y="140" width="132" height="12" rx="6" fill="#BFD2E0"/>
+  <rect x="266" y="140" width="46" height="12" rx="6" fill="#CFEFE4"/>
+
+  <!-- Row 3: pending -->
+  <circle cx="78" cy="186" r="9.5" fill="none" stroke="#CBD5E2" stroke-width="2.4"/>
+  <rect x="98" y="180" width="168" height="12" rx="6" fill="#D8E0EA"/>
+  <rect x="266" y="180" width="46" height="12" rx="6" fill="#EDF1F6"/>
+
+  <!-- Progress of the plan as a whole -->
+  <rect x="64" y="216" width="248" height="9" rx="4.5" fill="#E7EDF5"/>
+  <rect x="64" y="216" width="156" height="9" rx="4.5" fill="url(#tdp-progress)"/>
+
+  <!-- The check-in that arrives before the next model request -->
+  <path d="M352 150 C 366 150 374 140 390 138" fill="none" stroke="#B9C7D8" stroke-width="2"
+        stroke-dasharray="4 5" stroke-linecap="round"/>
+  <rect x="400" y="86" width="196" height="108" rx="18" fill="#FFFFFF" stroke="#D9E1EC" stroke-width="1.5"/>
+  <rect x="400" y="86" width="7" height="108" rx="3.5" fill="url(#tdp-ring)"/>
+  <circle cx="432" cy="120" r="11" fill="none" stroke="#CDEFE3" stroke-width="3.4"/>
+  <path d="M432 109 A11 11 0 0 1 443 120" fill="none" stroke="url(#tdp-ring)" stroke-width="3.4"
+        stroke-linecap="round"/>
+  <rect x="456" y="110" width="118" height="10" rx="5" fill="#D8E0EA"/>
+  <rect x="456" y="128" width="86" height="10" rx="5" fill="#E1E7EF"/>
+  <rect x="420" y="156" width="152" height="10" rx="5" fill="#EDF1F6"/>
+  <rect x="420" y="174" width="96" height="10" rx="5" fill="#EDF1F6"/>
+</svg>

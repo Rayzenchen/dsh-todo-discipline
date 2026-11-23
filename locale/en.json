@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Task enhancement",
+    "description": "Keeps the model's task list current during a turn: a one-sentence pre-step check-in repeats for as long as the list stays stale, and the turn boundary is gated on a list that does not contradict the work.",
+    "detail": "docs/DETAIL.md"
+  }
+}

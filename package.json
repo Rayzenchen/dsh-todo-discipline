@@ -1,0 +1,57 @@
+{
+  "name": "@local/dsh-todo-discipline",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Keep the model's task list current during a turn: a one-sentence pre-step check-in repeats for as long as the list stays stale, and the turn boundary is gated on a list that does not contradict the work.",
+  "license": "MIT",
+  "author": {
+    "name": "Rayzenchen",
+    "url": "https://github.com/Rayzenchen"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "todo",
+    "task-list",
+    "agent-discipline"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rayzenchen/dsh-todo-discipline.git"
+  },
+  "homepage": "https://github.com/Rayzenchen/dsh-todo-discipline#readme",
+  "bugs": {
+    "url": "https://github.com/Rayzenchen/dsh-todo-discipline/issues"
+  },
+  "scripts": {
+    "test": "node tools/verify-core.mjs"
+  },
+  "meta": {
+    "title": "任务功能增强",
+    "description": "让模型的「任务」清单在回合进行中实时跟进：模型每次发起请求前，若清单已过期（默认距上次更新 3 次工具调用）就注入一句简短提醒并持续重复（软，不含清单内容），收尾时若清单仍有未完成项则强制它再走一步把清单对齐（硬）。"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "tools/*.mjs",
+    "icon.svg",
+    "docs",
+    "LICENSE",
+    "README.md",
+    "README.en.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

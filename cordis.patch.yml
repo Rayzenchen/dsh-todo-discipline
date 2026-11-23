@@ -1,0 +1,24 @@
+# Bundle patch for @local/dsh-todo-discipline.
+#
+# One Host row, mounted at the profile ROOT — deliberately not inside the
+# `standard` agent preset. A root-level row's context is untagged, and
+# `scopeTarget`'s filter admits an untagged listener to every scope
+# (`if (tag === undefined) return true`), so the agent-scoped
+# `tools/post-execute` and `agent/turn-stopping` events reach this plugin.
+#
+# A nested insert into the preset is not an option anyway: `applyEntryPatches`
+# only inserts into a row carrying `group: true`, and the shipped
+# `preset-standard` row (`@deepseek-ai/dsh-agent-preset`) does not carry it.
+#
+# Every knob has a default; override here to change one, e.g.:
+#
+#   - id: dsh-todo-discipline
+#     name: '@local/dsh-todo-discipline'
+#     config:
+#       reminderInterval: 5      # how many tool calls may pass between reminders
+#       maxTurnEndSteers: 2      # forced continuations per turn (0 disables the gate)
+#
+# The row id must match the plugin's `name` export.
+- insert:
+    - id: dsh-todo-discipline
+      name: '@local/dsh-todo-discipline'

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" role="img" aria-label="Task list kept current during a turn">
+  <defs>
+    <linearGradient id="td-ring" x1="7" y1="6.5" x2="29" y2="29.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34E0B0"/>
+      <stop offset="1" stop-color="#0F9D7C"/>
+    </linearGradient>
+  </defs>
+  <!-- An open progress ring: the list is still being worked on. -->
+  <circle cx="18" cy="18" r="11.3" fill="none" stroke="url(#td-ring)" stroke-width="3.8"
+          stroke-linecap="round" stroke-dasharray="59.2 11.8" transform="rotate(-15 18 18)"/>
+  <!-- The check that means "kept current". -->
+  <path d="M13.1 18.9 L16.5 22.3 L22.4 15.4" fill="none" stroke="#0C8767" stroke-width="3"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
