@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Task enhancement",
-    "description": "Keeps the model's task list current during a turn: a one-sentence pre-step check-in repeats for as long as the list stays stale, and the turn boundary is gated on a list that does not contradict the work.",
+    "description": "[Deprecated] Superseded by @deepseek-ai/dsh-timeline in DSH 0.2.3-alpha.2, which replaces the Todo tool. Keep this plugin only on DSH 0.2.2 or earlier. Keeps the model's task list current during a turn: a one-sentence pre-step check-in repeats for as long as the list stays stale, and the turn boundary is gated on a list that does not contradict the work.",
     "detail": "docs/DETAIL.md"
   }
 }

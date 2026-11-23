@@ -2,6 +2,14 @@
 
 [![test](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml/badge.svg)](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml)
 
+> ### ⚠️ Deprecated (2026-11-23)
+>
+> Since DSH `0.2.3-alpha.2`, the official Timeline plugin (`@deepseek-ai/dsh-timeline`) owns Todo by default: it removes `todo_write` from the tool set and ships its own task trees, progress bar, and stale-plan reminder. This plugin therefore has **nothing left to act on** and is no longer maintained.
+>
+> - Use **Plugins → Timeline** instead; its reminder interval lives under the task-tracking settings (default 24 model iterations, minimum 1).
+> - If you are still on DSH `0.2.2` or earlier — where `todo_write` still exists — the `v1.0.0` release keeps working.
+> - The repository stays as an archive and for older DSH versions; no new features or fixes.
+
 > **Task enhancement** · [中文](README.md)
 
 Keeps the model's task list current *during* a turn, instead of being rewritten once at the end.

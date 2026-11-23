@@ -1,9 +1,9 @@
 {
   "name": "@local/dsh-todo-discipline",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "type": "module",
-  "description": "Keep the model's task list current during a turn: a one-sentence pre-step check-in repeats for as long as the list stays stale, and the turn boundary is gated on a list that does not contradict the work.",
+  "description": "[Deprecated] Superseded by @deepseek-ai/dsh-timeline in DSH 0.2.3-alpha.2, which replaces the Todo tool. Keep this plugin only on DSH 0.2.2 or earlier. Keep the model's task list current during a turn: a one-sentence pre-step check-in repeats for as long as the list stays stale, and the turn boundary is gated on a list that does not contradict the work.",
   "license": "MIT",
   "author": {
     "name": "Rayzenchen",
@@ -30,7 +30,7 @@
   },
   "meta": {
     "title": "任务功能增强",
-    "description": "让模型的「任务」清单在回合进行中实时跟进：模型每次发起请求前，若清单已过期（默认距上次更新 3 次工具调用）就注入一句简短提醒并持续重复（软，不含清单内容），收尾时若清单仍有未完成项则强制它再走一步把清单对齐（硬）。"
+    "description": "【已弃用】DSH 0.2.3-alpha.2 起由官方时间线插件接管待办，本插件没有作用对象，仅旧版 DSH 仍可用。让模型的「任务」清单在回合进行中实时跟进：模型每次发起请求前，若清单已过期（默认距上次更新 3 次工具调用）就注入一句简短提醒并持续重复（软，不含清单内容），收尾时若清单仍有未完成项则强制它再走一步把清单对齐（硬）。"
   },
   "exports": {
     ".": "./index.js",

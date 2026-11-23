@@ -2,6 +2,14 @@
 
 [![test](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml/badge.svg)](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml)
 
+> ### ⚠️ 已弃用（2026-11-23）
+>
+> 自 DSH `0.2.3-alpha.2` 起，官方时间线插件 `@deepseek-ai/dsh-timeline` 默认接管待办：它把 `todo_write` 从工具表里摘掉，自带任务树、进度条，以及「多久没更新就提醒」的机制。本插件因此**没有作用对象**，已停止维护。
+>
+> - 新版本请直接用 **插件 → 时间线**；提醒频率在「提醒智能体更新进度」里调（默认 24 次模型迭代，最小 1）。
+> - 仍在 DSH `0.2.2` 及更早版本（这些版本还提供 `todo_write`）的人，可以继续用本仓库的 `v1.0.0`。
+> - 仓库保留作存档与旧版兼容，不再接受新功能或修复。
+
 > **任务功能增强** · [English](README.en.md)
 
 让 DSH 的「任务」清单在**回合进行中**实时跟进，而不是收尾时一次性全标完成。
