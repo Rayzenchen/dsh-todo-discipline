@@ -1,5 +1,7 @@
 # dsh-todo-discipline
 
+[![test](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml/badge.svg)](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml)
+
 > **Task enhancement** · [中文](README.md)
 
 Keeps the model's task list current *during* a turn, instead of being rewritten once at the end.

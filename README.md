@@ -1,5 +1,7 @@
 # dsh-todo-discipline
 
+[![test](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml/badge.svg)](https://github.com/Rayzenchen/dsh-todo-discipline/actions/workflows/test.yml)
+
 > **任务功能增强** · [English](README.en.md)
 
 让 DSH 的「任务」清单在**回合进行中**实时跟进，而不是收尾时一次性全标完成。
